@@ -1,0 +1,24 @@
+// App Colors
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk:wght@400;500&display=swap");
+
+$white: #ffffff;
+$dark-gray: #8f8694;
+$light-gray: #dfdee0;
+$blue: #47a2ff;
+$red: #ff834a;
+$error-red: #ff4500;
+$pink: #bd45e2;
+$light-purple: #d53aff;
+$dark-purple: #21092f;
+
+// Images
+$mobile-header: url("../../images/bg-main-mobile.png");
+$desktop-header: url("../../images/bg-main-desktop.png");
+$card-back: url("../../images/bg-card-back.png");
+$card-front: url("../../images/bg-card-front.png");
+
+// Fonts
+$space-grotesk: "Space Grotesk";
+
+// Break points
+$desktop-view: 1440px;

@@ -1,0 +1,29 @@
+@import "../../scss/variables.scss";
+
+.Button {
+  height: 3.293rem;
+  width: 19.938rem;
+
+  margin-top: 1.739rem;
+
+  color: $white;
+  font-family: $space-grotesk;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.438rem;
+
+  background: $dark-purple;
+  border-radius: 0.5rem;
+  border: none;
+
+  &:hover {
+    background: $pink;
+  }
+
+  @media (min-width: $desktop-view) {
+    // display: flex;
+    width: 23.813rem;
+    height: 3.313rem;
+  }
+}

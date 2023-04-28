@@ -1,0 +1,140 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: $mobile-header;
+  background-size: cover;
+  height: 15rem;
+  font-family: $space-grotesk;
+
+  &__back {
+    background-image: $card-back;
+    background-size: cover;
+    min-height: 9.813rem;
+    width: 17.813rem;
+
+    margin-top: 2rem;
+    margin-left: 3.563rem;
+    z-index: 10;
+
+    &--ccv {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 100%;
+      margin-right: 2rem;
+      color: $white;
+      font-size: 0.563rem;
+      letter-spacing: 0.081rem;
+    }
+  }
+
+  &__front {
+    display: flex;
+    flex-direction: column;
+    background-image: $card-front;
+    background-size: cover;
+    min-height: 9.813rem;
+    width: 17.813rem;
+
+    margin-right: 3.563rem;
+    margin-top: -4.3rem;
+
+    z-index: 20;
+  }
+
+  &__frontIcons {
+    display: flex;
+    flex: 50%;
+    padding: 1rem 1rem;
+
+    &--logo {
+      height: 1.875rem;
+    }
+  }
+
+  &__frontDetails {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    gap: 1rem;
+    padding: 1rem 1rem;
+
+    &--number {
+      color: $white;
+      font-size: 1.125rem;
+      letter-spacing: 0.138rem;
+    }
+
+    &--details {
+      display: flex;
+      justify-content: space-between;
+      color: $white;
+      font-size: 0.575rem;
+      letter-spacing: 0.081rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+  // Tablet view
+  @media (min-width: $desktop-view) {
+    display: flex;
+    background-image: $desktop-header;
+    height: 100vh;
+    min-width: 30.188rem;
+    position: relative;
+
+    &__front {
+      @include card-size;
+      position: absolute;
+      top: 16.688rem;
+      left: 10.25rem;
+    }
+
+    &__back {
+      @include card-size;
+      position: absolute;
+      margin-top: 0;
+      margin-left: 0;
+      top: 29.313rem;
+      left: 16.125rem;
+
+      &--ccv {
+        margin-right: 3.125rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.219rem;
+        line-height: 1.125rem;
+      }
+    }
+
+    &__frontDetails {
+      padding: 2.313rem 2rem;
+
+      &--number {
+        font-size: 1.75rem;
+        letter-spacing: 0.219rem;
+        line-height: 1.125rem;
+      }
+
+      &--details {
+        font-size: 0.875rem;
+        letter-spacing: 0.125rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.125rem;
+      }
+    }
+
+    &__frontIcons {
+      padding: 1.688rem 2rem;
+
+      &--logo {
+        height: 1.875rem;
+      }
+    }
+  }
+}

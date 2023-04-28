@@ -1,0 +1,36 @@
+@mixin form-large-input {
+  height: 2.796rem;
+  width: 19.938rem;
+
+  box-sizing: border-box;
+  border: 0.063rem solid $light-gray;
+  border-radius: 0.5rem;
+  background-color: $white;
+  text-indent: 0.625rem;
+
+  @media (min-width: $desktop-view) {
+    height: 2.813rem;
+    width: 23.813rem;
+  }
+}
+
+@mixin form-small-input {
+  height: 2.796rem;
+  width: 4rem;
+
+  box-sizing: border-box;
+  border: 0.063rem solid $light-gray;
+  border-radius: 0.5rem;
+  background-color: $white;
+  text-indent: 0.625rem;
+
+  @media (min-width: $desktop-view) {
+    height: 2.813rem;
+    width: 5rem;
+  }
+}
+
+@mixin card-size {
+  height: 15.313rem;
+  width: 27.938rem;
+}

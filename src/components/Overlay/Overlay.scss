@@ -1,0 +1,49 @@
+@import "../../scss/variables.scss";
+
+.Overlay {
+  width: 21.563rem;
+  height: 27.188rem;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  position: fixed;
+  top: 1.938rem;
+  left: 30%;
+  z-index: -1;
+
+  &__one {
+    position: absolute;
+    width: 14.125rem;
+    height: 16.75rem;
+    left: 6.281rem;
+    top: 12.375rem;
+
+    background: $blue;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+    filter: blur(4.247rem);
+  }
+  &__two {
+    position: absolute;
+    width: 14.125rem;
+    height: 16.75rem;
+    left: 13.719rem;
+    top: 3.625rem;
+
+    background: $red;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+    filter: blur(4.247rem);
+  }
+  &__three {
+    position: absolute;
+    width: 14.125rem;
+    height: 16.75rem;
+    left: 11.344rem;
+    top: 1.938rem;
+
+    background: $light-purple;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+    filter: blur(4.247rem);
+  }
+}

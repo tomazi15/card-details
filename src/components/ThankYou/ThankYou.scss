@@ -1,0 +1,43 @@
+@import "../../scss/variables.scss";
+
+.ThankYou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5.688rem;
+
+  &__heading {
+    margin-top: 2.188rem;
+    margin-bottom: 0;
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 3.42222px;
+    color: $dark-purple;
+  }
+
+  &__paragraph {
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: $dark-gray;
+  }
+
+  // Tablet view
+  @media (min-width: $desktop-view) {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+  }
+}
