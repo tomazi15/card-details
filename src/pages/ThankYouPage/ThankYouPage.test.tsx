@@ -1,7 +1,7 @@
-import ThankYouPage from "../ThankYouPage";
+import ThankYouPage from "./ThankYouPage";
 import { BrowserRouter } from "react-router-dom";
 import userEvent from "@testing-library/user-event";
-import { renderWithProviders } from "../../../utils/test-utils";
+import { renderWithProviders } from "../../utils/test-utils";
 import {
   buttonSelector,
   cardCvcSelector,
@@ -10,7 +10,7 @@ import {
   cardNumberSelector,
   thankYouMessageSelector,
   thankYouTitleSelector,
-} from "../../../utils/testsSelectors";
+} from "../../utils/testsSelectors";
 
 const mockedUsedNavigate = jest.fn();
 

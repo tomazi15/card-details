@@ -1,10 +1,10 @@
 import { MemoryRouter } from "react-router-dom";
-import { renderWithProviders } from "../../utils/test-utils";
-import App from "../App";
+import { renderWithProviders } from "../utils/test-utils";
+import App from "./App";
 import {
   holderNameInputSelector,
   thankYouTitleSelector,
-} from "../../utils/testsSelectors";
+} from "../utils/testsSelectors";
 
 describe("App", () => {
   test("should display HomePage on `/` route", () => {

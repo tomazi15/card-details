@@ -1,5 +1,5 @@
-import HomePage from "../HomePage";
-import { renderWithProviders } from "../../../utils/test-utils";
+import HomePage from "./HomePage";
+import { renderWithProviders } from "../../utils/test-utils";
 import { BrowserRouter } from "react-router-dom";
 import {
   buttonSelector,
@@ -17,7 +17,7 @@ import {
   numberErrorSelector,
   numberInputSelector,
   overlaySelector,
-} from "../../../utils/testsSelectors";
+} from "../../utils/testsSelectors";
 import userEvent from "@testing-library/user-event";
 import { act } from "react-dom/test-utils";
 
